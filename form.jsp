@@ -13,42 +13,50 @@
         <style>
             div.bord{border-style: solid;}
             div.bord{box-sizing: border-box;}
+            form{
+                display: flex;
+                justify-content: space-between;
+            }
+            form > div > div{
+                display: flex;
+                flex-direction: row;
+            }
         </style>
     </head>
     <body>
         <h1>Fill in details</h1>
         <div class="bord">
-            <form action="submit.html" method="POST">
-                <table border="0" width="5" cellspacing="5" cellpadding="5">
-                    <tr>
-                        <td align="right" style="width:200px">Enter amount of feed used for all cows</td>
-                        <td ><input type="text" name="feeds"/></td>
-                    </tr>
-                    <tr>
-                        <td align="right">Enter cows on heat</td>
-                        <td><input type="text" name="heat"/></td>
-                    </tr>
-                    <tr>
-                        <td align="right">Enter cows with mastitis</td>
-                        <td><input type="text" name="mastitis"/></td>
-                    </tr>
-                    <tr>
-                        <td align="right">Enter litres of milk discarded due to mastitis</td>
-                        <td><input type="text" name="feeds"/></td>
-                    </tr>
-                    <tr>
-                        <td align="right">Enter litres of milk produced</td>
-                        <td><input type="text" name="dis_milk"/></td>
-                    </tr>
-                    <tr>
-                        <td align="right">Remarks</td>
-                        <td><input type="text" name="remarks"/></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td><input type="submit" value="Submit" /></td>
-                    </tr>
-                </table>
+            <form action="Submit.do" method="POST">
+                <div>
+                    <div>
+                        <p>Enter amount of feed used for all cows</p>
+                        <p><input type="text" name="feeds"/></p>
+                    </div>
+                    <div>
+                        <p>Enter the number cows on heat</p>
+                        <p><input type="text" name="heat"/></p>
+                    </div>
+                    <div>
+                        <p>Enter number cows with mastitis</p>
+                        <p><input type="text" name="mastitis"/></p>
+                    </div>
+                    <div>
+                        <p>Enter litres of milk discarded due to mastitis</p>
+                        <p><input type="text" name="dis_milk"/></p>
+                    </div>
+                    <div>
+                        <p>Enter litres of milk produced</p>
+                        <p><input type="text" name="milk"/></p>
+                    </div>
+                    <div>
+                        <p>Remarks</p>
+                        <p><input type="text" name="remarks"/></p>
+                    </div>
+                    <div>
+                        <p></p>
+                        <p><input type="submit" value="Submit" /></p>
+                    </div>
+                <div>
 
             </form>
         </div>
